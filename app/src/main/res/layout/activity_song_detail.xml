@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="#ffffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:padding="14.0dip"
+                android:layout_width="50.0dip"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_icon"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:textSize="18.0sp"
+                android:textColor="#ff424242"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Project Details"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/hammersmith_one" />
+
+            <ImageView
+                android:id="@+id/menuIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="50.0dip"
+                android:src="@drawable/menu_black_icon"
+                android:adjustViewBounds="true"
+                android:paddingStart="10.0dip"
+                android:paddingEnd="10.0dip"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="#ffffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/imageSlider"
+                android:layout_width="fill_parent"
+                android:layout_height="180.0dip"
+                app:sliderAnimationDuration="500"
+                app:sliderAutoCycleDirection="right"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="500"
+                app:sliderIndicatorGravity="bottom|center"
+                app:sliderIndicatorMargin="15.0dip"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3.0dip"
+                app:sliderIndicatorRadius="2.0dip"
+                app:sliderIndicatorSelectedColor="@color/blue"
+                app:sliderIndicatorUnselectedColor="#ffffffff"
+                app:sliderScrollTimeInSec="3"
+                app:sliderStartAutoCycle="true"
+                tools:ignore="MissingClass" />
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginStart="10.0dip"
+                app:cardCornerRadius="5.0dip"
+                app:cardElevation="5.0dip">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:background="#80ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="18.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2.0dip"
+                        android:layout_marginBottom="2.0dip"
+                        android:src="@drawable/back_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="18.0dip"
+                        android:layout_marginEnd="18.0dip"
+                        android:elevation="5.0dip" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/actionButton"
+        android:layout_below="@id/top_bar">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:textSize="20.0sp"
+                android:textColor="#cc000000"
+                android:id="@+id/projectTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:fontFamily="@font/hammersmith_one"
+                android:layout_marginStart="10.0dip"
+                android:layout_marginEnd="10.0dip" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/projectLanguages"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginStart="10.0dip"
+                android:layout_marginEnd="10.0dip" />
+
+            <View
+                android:background="#1a365697"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="30.0dip" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2.0">
+
+                <TextView
+                    android:textColor="#99000000"
+                    android:gravity="center"
+                    android:id="@+id/songLyrics"
+                    android:padding="10.0dip"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Lyrics"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/hammersmith_one" />
+
+                <TextView
+                    android:textColor="#4d000000"
+                    android:gravity="center"
+                    android:id="@+id/songComments"
+                    android:background="@color/blue_very_light"
+                    android:padding="10.0dip"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="Comments"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/hammersmith_one" />
+            </LinearLayout>
+            <WebView
+                android:id="@+id/projectDetailsWebView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/commentsRecyclerView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/writeComment"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        android:layout_width="55.0dip"
+        android:layout_height="55.0dip"
+        android:layout_marginBottom="20.0dip"
+        android:src="@drawable/write_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20.0dip"
+        android:layout_alignParentEnd="true"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:textColor="#ffffffff"
+        android:id="@id/actionButton"
+        android:background="@drawable/round_back_light_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:text="Buy Now"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/hammersmith_one"
+        android:layout_marginStart="10.0dip"
+        android:layout_marginEnd="10.0dip" />
+</RelativeLayout>

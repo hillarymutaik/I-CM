@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">INTERUTO CM</string>
+
+    <!-- Strings from Duka Moja firebase   -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_opne">Open nav drawer</string>
+    <string name="navigation_drawer_close">Close nav drawer</string>
+    <string name="subjects">Subjects</string>
+    <string name="oral_pathology">Oral Pathology</string>
+    <string name="prothesis">Prothesis</string>
+    <string name="crown">Crown</string>
+    <string name="operative">Operative</string>
+    <string name="ortho">Ortho</string>
+    <string name="pedo">Pedo</string>
+    <string name="pharma">Pharma</string>
+
+    <!-- Broadcast Receivers -->
+    <string name="broadcast_seekbar_update">broadcast_seekbar_update</string>
+    <string name="broadcast_seekbar_value">broadcast_seekbar_value</string>
+    <string name="broadcast_update_ui">broadcast_update_ui</string>
+    <string name="broadcast_new_media_id">broadcast_new_media_id</string>
+
+    <string name="fragment_base_media">MediaBaseFragment</string>
+
+    <string name="download_channel_name">Download</string>
+
+    <string name="string_remove_from_playlist">Remove from playlist?</string>
+    <string name="string_yes">yes</string>
+    <string name="string_no">no</string>
+    <string name="label_stop">Stop</string>
+    <string name="label_pause">Pause</string>
+    <string name="label_play">Play</string>
+    <string name="label_play_pause">Play and pause toggle</string>
+    <string name="label_previous">Previous track</string>
+    <string name="label_next">Next track</string>
+
+    <string name="custom_action">Custom Action</string>
+    <string name="custom_action_increase_15">Increase Custom Action</string>
+    <string name="custom_action_decrease_15">Decrease Custom Action</string>
+    <string name="todo">TODO</string>
+    <string name="record">Record</string>
+    <string name="this_is_the_text_title">this is the text title</string>
+
+    <!--  facebook strings for app_id and client_token  -->
+
+    <string name="facebook_app_id">6896039563800214</string>
+    <string name="fb_login_protocol_scheme">fb6896039563800214</string>
+    <string name="facebook_client_token">d2265ede8fe3362bd1e2e6df013057eb</string>
+    <string name="err_email">invalid email</string>
+    <string name="err_password">password should not be empty</string>
+    <string name="err_username">provide your username</string>
+    <string name="err_phone">provide your phone number</string>
+    <string name="link_to_register">Don\'t have an account?<u> swipe LEFT to register</u>.</string>
+    <string name="interuto_cm">INTERUTO CM</string>
+    <string name="welcome">WELCOME TO INTERUTO CM ENTERTAINMENT</string>
+    <string name="the_viral_guy">~~The Viral Guy~~</string>
+
+
+</resources>

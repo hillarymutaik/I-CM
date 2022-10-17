@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="id_activityScreenTitle">
+        <item/>
+        <item>Home</item>
+        <item>Profile</item>
+        <item>My Videos</item>
+        <item>Fan Page</item>
+        <item>Share</item>
+        <item/>
+        <item>Log out</item>
+
+
+    </string-array>
+
+    <array name="id_activityScreenIcon">
+        <item>@drawable/cancel</item>
+        <item>@drawable/home</item>
+        <item>@drawable/emplo</item>
+        <item>@drawable/event</item>
+        <item>@drawable/fan</item>
+        <item>@drawable/share</item>
+        <item>0</item>
+        <item>@drawable/logout</item>
+    </array>
+
+</resources>

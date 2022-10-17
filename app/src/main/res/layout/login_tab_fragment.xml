@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"   android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+    <ScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="32dp">
+
+            <LinearLayout
+                android:id="@+id/bodyLy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="Sample"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/selector_bg_rectangle_radius_high_light_gray"
+                    android:hint="Email"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:textColorHint="@color/textColorHint" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPasswordLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    app:hintAnimationEnabled="false"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/selector_bg_rectangle_radius_high_light_gray"
+
+                        android:hint="Password"
+                        android:paddingEnd="16dp"
+                        android:paddingStart="16dp"
+                        android:textColorHint="@color/textColorHint"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:spinning_bar_width="4dp"
+                android:layout_below="@+id/bodyLy"
+                app:spinning_bar_color="#FFF"
+                android:text="Login"
+                app:spinning_bar_padding="6dp"
+                android:background="@drawable/button_bg" />
+
+
+
+                <TextView
+                    android:id="@+id/or_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/login"
+                    android:text="@string/link_to_register"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

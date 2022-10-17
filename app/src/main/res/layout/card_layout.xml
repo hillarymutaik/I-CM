@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_columnWeight="1"
+    android:layout_rowWeight="1"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="12dp"
+    android:id="@+id/cardview"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/pink"
+            android:src="@drawable/light"/>
+
+        <TextView
+            android:id="@+id/media_time_stamp"
+            android:layout_toEndOf="@+id/img1"
+            android:layout_marginStart="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 weeks ago"
+            android:visibility="gone"
+             />
+
+        <LinearLayout
+            android:layout_toEndOf="@+id/img1"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_marginEnd="50dp"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="song title goes here .mp3 file amos kibet kemoi again "
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration"
+                android:textColor="@color/textColorHint"
+                android:layout_marginStart="5dp"/>
+        </LinearLayout>
+
+
+
+
+            <ImageView
+                android:id="@+id/download"
+                android:src="@drawable/ic_download"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Download"
+                android:textColor="#FE9A2E"
+                android:layout_marginStart="10dp"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
